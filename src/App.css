@@ -1,0 +1,69 @@
+.application-card {
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.application-card:hover {
+  transform: translateY(-6px);
+}
+
+.status-box {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.status-applied {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-interview {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-hired {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.hired-msg {
+  background: #d4edda;
+}
+
+.interview-msg {
+  background: #fff3cd;
+}
+
+.rejected-msg {
+  background: #f8d7da;
+}
+
+.create-job-card {
+  border-radius: 20px;
+}
+
+.create-job-card .form-control {
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.create-job-card .btn {
+  border-radius: 10px;
+  font-weight: 600;
+}
