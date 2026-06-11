@@ -8,7 +8,7 @@ export const registerUser = createAsyncThunk(
   async (userData, thunkAPI) => {
     try {
       const response = await axios.post(
-        `${BASE_URL}/users/register`,
+        `https://job-portal-server-663d.onrender.com/users/register`,
         userData
       );
 
@@ -24,7 +24,7 @@ export const loginUser = createAsyncThunk(
   async (userData, thunkAPI) => {
     try {
       const response = await axios.post(
-        `${BASE_URL}/users/login`,
+        `https://job-portal-server-663d.onrender.com/users/login`,
         userData
       );
 

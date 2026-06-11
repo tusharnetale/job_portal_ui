@@ -9,7 +9,7 @@ export const getJobs = createAsyncThunk(
     try {
       const token = localStorage.getItem("token");
 
-      const response = await axios.get(API_URL, {
+      const response = await axios.get("https://job-portal-server-663d.onrender.com/jobs", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -31,7 +31,7 @@ export const getMyJobs = createAsyncThunk(
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        `${API_URL}/my-jobs`,
+        "https://job-portal-server-663d.onrender.com/my-jobs",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ export const createJob = createAsyncThunk(
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        `${API_URL}/create`,
+        `https://job-portal-server-663d.onrender.com/create`,
         jobData,
         {
           headers: {
